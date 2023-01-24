@@ -1,4 +1,4 @@
-package prototype;
+package creational.prototype;
 
 import lombok.Getter;
 import lombok.Setter;
