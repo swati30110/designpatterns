@@ -1,14 +1,13 @@
 package creational.abstractfactory;
 
-import creational.factory.IOS;
-import creational.factory.OS;
-import creational.factory.OSType;
-import creational.factory.Windows;
+import creational.abstractfactory.ios.IOS;
+import creational.abstractfactory.window.Window;
+
 
 public class OSFactory {
     public OS getInstance(OSType osType){
         switch (osType){
-            case WINDOWS: return new Windows();
+            case WINDOWS: return new Window();
             case IOS: return new IOS();
         }
         return null;

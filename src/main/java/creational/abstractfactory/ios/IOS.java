@@ -1,19 +1,17 @@
-package creational.abstractfactory.window;
+package creational.abstractfactory.ios;
 
 import creational.abstractfactory.Cursor;
 import creational.abstractfactory.OS;
 import creational.abstractfactory.Tab;
 
-public class Window implements OS {
-
+public class IOS implements OS {
     @Override
     public Tab createTab() {
-        return new WindowsTab();
+        return new IOSTab();
     }
 
     @Override
     public Cursor createCursor() {
-        return new WindowsCursor();
+        return new IOSCursor();
     }
-    
 }
